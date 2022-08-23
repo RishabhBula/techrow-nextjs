@@ -1,0 +1,115 @@
+@import "../../../assets/scss/variable";
+
+.HeaderWrapper {
+  width: 100%;
+  padding: 30px 30px 30px 12px;
+  background-color: transparent;
+  position: relative;
+  z-index: 99;
+}
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.HeaderMenubar {
+  cursor: pointer;
+  display: none;
+}
+.HeaderBtn {
+  height: 48px;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 15px 20px;
+}
+.HeaderLogo img {
+  max-width: 120px;
+}
+
+.HeaderNavList {
+  .HeaderNav {
+    align-items: center;
+  }
+  .HeaderNavLink {
+    padding: 0;
+    margin-left: 55px;
+  }
+  .login{
+    border: solid 0.5px;
+    padding: 10px;
+    border-radius: 2px;
+  }
+}
+.MenuNavList {
+  a {
+    position: unset;
+    &::after {
+      content: unset;
+    }
+    span {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 44px;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: transparent;
+      }
+    }
+    &.active {
+      span {
+        &::after {
+            background-color: $secondary;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .MenuNavList {
+    .nav-link {
+      span {
+        &::after {
+          width: 33px;
+        }
+      }
+    }
+  }
+  .HeaderNavList {
+    display: none;
+  }
+  .HeaderMenubar {
+    display: block;
+  }
+  .HeaderLogo img {
+    width: 110px;
+  }
+}
+@media (max-width: 575px) {
+  .HeaderWrapper {
+    padding: 20px 20px 15px 20px;
+  }
+}
+
+//********************Off Canvas***************
+.MenuCanvas {
+  background: linear-gradient(180.2deg, #3F41C9 0.17%, #3F41C9 61.51%, #8924CD 118.39%);
+  width: 300px;
+  .MenuLogo img {
+    width: 110px;
+  }
+  .MenuCanvasBody {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .MenuNavList {
+    .MenuNav {
+      flex-direction: column;
+      a {
+        padding: 1rem;
+      }
+    }
+  }
+}

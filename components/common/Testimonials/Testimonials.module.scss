@@ -1,0 +1,102 @@
+@import "../../../assets/scss/variable";
+
+.TestimonialSaying {
+  background-image: url(../../../assets/images/people_saying_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 80px 40px;
+  & > div {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .TestimonialHeading hr {
+    background-color: $secondary;
+    width: 58px;
+    height: 2px;
+    opacity: 1;
+    margin: 24px auto 50px;
+  }
+  .TestimonialSectionDetail {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1420px;
+    margin: 0 auto;
+    &:not(:last-child) {
+      margin-bottom: 80px;
+    }
+  }
+  .TestimonialQuotes {
+    margin-right: 50px;
+  }
+  .TestimonialTitle {
+    font-family: $font-family-md;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 175%;
+    color: #e5e5e5;
+  }
+  .TestimonialSubtitle {
+    font-family: $font-family-bold;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: $secondary;
+  }
+  .TestimonialSubtitle.SchoolName {
+    font-family: $font-family-semibold;
+    font-weight: 600;
+    color: $dark;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 1440px) {
+  .TestimonialSaying {
+    & > div {
+      max-width: 1080px;
+    }
+    .TestimonialTitle {
+      font-size: 20px;
+    }
+    .TestimonialSubtitle {
+      font-size: 16px;
+    }
+    .TestimonialSubtitle.SchoolName {
+      margin-top: 10px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .TestimonialSaying {
+    padding: 40px 20px;
+    .TestimonialSectionDetail {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+    .TestimonialQuotes {
+      display: none;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .TestimonialSaying {
+    padding: 40px 20px;
+    .TestimonialHeading hr {
+      margin: 20px auto 30px;
+    }
+    .TestimonialSectionDetail {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .TestimonialSaying {
+    .TestimonialTitle {
+      font-size: 18px;
+    }
+    .TestimonialSubtitle {
+      font-size: 14px;
+    }
+  }
+}

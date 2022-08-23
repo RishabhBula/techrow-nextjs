@@ -1,0 +1,73 @@
+@import "../../../assets/scss/variable";
+
+.Wrapper{
+    background: linear-gradient(78.68deg, #8924CC 0%, #3C42C8 100%);
+}
+.Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px;
+    background-image: url(../../../assets/images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.FooterLogo {
+    margin-bottom: 30px;
+}
+.FooterNavList {
+    .FooterNav {
+        justify-content: center;
+    }
+    .NavLink {
+        padding: 0;
+        margin: 30px 40px;
+    }
+}
+.FooterSocialList {
+    margin: 30px;
+    .SocialLink {
+        margin: 0 6px;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+            path {
+                fill: $gray;
+            }
+        }
+    }
+}
+.CopyrightText {
+    font-family: $font-family-md;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: $white-shade;
+    padding-top: 30px;
+}
+@media (max-width: 992px) {
+    .Footer {
+        padding: 60px;
+    }
+    .FooterNavList .NavLink {
+        margin: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .Footer {
+        padding: 40px;
+    }
+    .FooterNavList .NavLink {
+        margin: 15px 20px;
+    }
+}
+@media (max-width: 575px) {
+    .Footer {
+        padding: 40px 20px;
+    }
+    .FooterNavList .NavLink {
+        margin: 15px;
+    }
+}

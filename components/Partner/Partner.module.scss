@@ -1,0 +1,41 @@
+@import "../../assets/scss/variable";
+
+.PartnerSection {
+    padding-top: 30px;
+    text-align: center;
+    .Nav {
+        align-items: center;
+        justify-content: center;
+        .NavLink {
+            padding: 60px 30px;
+        }
+    }
+}
+@media (max-width: 1440px) {
+    .PartnerSection {
+        .Nav {
+            .NavLink {
+                padding: 40px 25px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .PartnerSection {
+        .Nav {
+            .NavLink {
+                padding: 30px 20px;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .PartnerSection {
+        padding: 10px;
+        .Nav {
+            .NavLink {
+                padding: 20px;
+            }
+        }
+    }
+}
