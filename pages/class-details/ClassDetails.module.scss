@@ -1,0 +1,328 @@
+@import "../../assets/scss/_variable.scss";
+
+.ClassDetailPage .FirstContainer {
+    background-image: url("../../assets/images/dummy/class-detail.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &::before {
+        content: "";
+        background: linear-gradient(-13.43deg, #0D0D4B 2.38%, #8924CC 100%);
+        opacity: 0.8;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &::after {
+        content: "";
+        background: linear-gradient(180deg, rgba(13, 13, 75, 0) 0%, #0D0D4B 100%);
+        opacity: 0.8;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+.ClassDetailPage {
+    .RightContainer {
+        align-items: flex-start;
+        padding-top: 30px;
+    }
+    button {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+.ClassDetailLabel {
+    font-family: $font-family-bold;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    color: $secondary;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    svg, img {
+        margin-right: 16px;
+    }
+}
+.NavigationSubtitle {
+    font-family: $font-family-md;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 175%;
+    color: $white;
+    margin-top: 15px;
+    margin-bottom: 38px;
+}
+.ClassFirstSection {
+    position: relative;
+    z-index: 1;
+}
+.ClassMiddleContainer {
+    background-color: $primary;
+    padding: 100px 0;
+}
+.SessionPlaylist {
+    background: linear-gradient(25.44deg, rgba(29, 18, 199, 0.9) 5.75%, rgba(135, 48, 210, 0.9) 99.13%);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 805px;
+    padding: 50px;
+    margin-left: 15px;
+}
+.SessionSubTitle {
+    border-bottom: 1px solid rgb(255 255 255 / 25%);
+    padding: 20px 0;
+    margin-right: 30px;
+}
+.SessionDetail {
+    display: flex;
+    justify-content: flex-end;
+}
+.SessionList {
+    max-height: 700px;
+    overflow-y: auto;
+    ol {
+        padding-left: 0;
+        margin-bottom: 0;
+        padding-right: 30px;
+        & > div {
+            border-bottom: 1px solid rgb(255 255 255 / 25%);
+        }
+        li {
+            font-family: 'Quicksand', $font-family-md;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 22px;
+            padding: 22px 0;
+            margin-left: 2.5rem;
+            color: $white;
+            .SessionData {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .Time {
+                font-size: 18px;
+                text-align: right;
+                letter-spacing: 0.3px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.WatchTrailer {
+    font-family: $font-family-bold;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: $white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 34px 0;
+}
+.SessionInstructor {
+    margin-top: 50px;
+    max-width: 684px;
+    margin-right: 15px;
+}
+.ClassDetailWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+    .ClassDetailLabel {
+        margin-right: 5px;
+        width: 160px;
+    }
+    .ClassDetailValue {
+        font-family: $font-family-md;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+        text-align: center;
+        color: $white;
+    }
+}
+.ClassDetailPage {
+    .VideoContainer {
+        video {
+            max-width: 817px;
+            max-height: 418px;
+        }
+    }
+}
+@media (max-width: 1440px) {   
+    .ClassDetailPage {
+        .VideoContainer {
+            video {
+                max-width: 612px;
+                max-height: 314px;
+            }
+        }
+    }
+}
+@media (max-width: 1280px) {    
+    .SessionPlaylist {
+        padding: 35px;
+    }
+    .SessionSubTitle {
+        padding: 15px 0;
+    }
+    .SessionList {
+        max-height: 650px;
+        ol {
+            li {
+                font-size: 18px;
+                line-height: 140%;
+                padding: 18px 0;
+                margin-left: 2rem;
+                .Time {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .WatchTrailer {
+        margin: 25px 0;
+    }
+}
+@media (max-width: 1199px) {  
+    .ClassDetailPage button {
+        margin-top: 0;
+    }
+    .ClassDetailPage .ContentSection {
+        padding: 0;
+    }
+    .FirstContainer {
+        .LeftContainer {
+            justify-content: center;
+            padding: 0 30px;
+            & > div {
+                max-width: 100%;
+                padding: 0;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {  
+    .SessionInstructor {
+        text-align: center;
+        margin: 0 auto;
+    }  
+    .ClassMiddleContainer {
+        padding: 40px 0;
+    }
+    .SessionPlaylist {
+        padding: 25px;
+        margin: 0;
+    }
+    .SessionDetail {
+        justify-content: center;
+    }
+    .SessionSubTitle {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+    .SessionList {
+        max-height: 450px;
+        ol {
+            li {
+                font-size: 14px;
+                padding: 12px 0;
+                margin-left: 1.8rem;
+                .Time {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {  
+    .ClassDetailLabel {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        svg, img {
+            margin-right: 12px;
+        }
+    }
+    .ClassDetailWrapper {
+        .ClassDetailLabel {
+            width: 130px;
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .ClassDetailValue {
+            font-size: 16px;
+        }
+    }
+    .ClassMiddleContainer {
+        padding: 30px 15px;
+    }
+    .SessionPlaylist {
+        padding: 16px;
+    }
+    .SessionSubTitle {
+        padding-top: 0;
+        font-size: 12px;
+    }
+    .WatchTrailer {
+        margin: 20px 0;
+        font-size: 16px;
+    }
+    .SessionList {
+        max-height: 340px;
+        ol {
+            li {
+                font-size: 12px;
+                padding: 8px 0;
+                margin-left: 1.5rem;
+                .Time {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .FirstContainer {
+        .LeftContainer {
+            justify-content: center;
+            padding: 0 20px;
+            text-align: left;
+            & > div {
+                max-width: 100%;
+                padding: 0;
+            }
+            .NavigationSubtitle {
+                font-size: 18px;
+                line-height: 150%;
+                margin: 15px 0;
+            }
+        }
+    }
+    .ClassDetailPage .RightContainer {
+        padding-top: 0;
+    }
+}
+@media (max-width: 575px) {  
+    .FirstContainer {
+        .LeftContainer {
+            .NavigationSubtitle {
+                font-size: 16px;
+                margin: 15px 0;
+            }
+        }
+    }
+}

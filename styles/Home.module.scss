@@ -1,0 +1,122 @@
+@import "../assets/scss/variable";
+
+.Homepage article:first-child {
+  background: linear-gradient(
+    0deg,
+    #3f41c9 0.17%,
+    #3f41c9 61.51%,
+    #8924cd 118.39%
+  );
+}
+
+.header-logo img {
+  max-width: 120px;
+}
+
+.sub-title {
+  font-family: 'Quicksand', 'Spartan-Medium', sans-serif;
+  // font-family: $font-family-md;
+  font-weight: 500;
+}
+.AnywhereSection {
+  background-color: #792ACC;
+  padding: 60px 0;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .AnywhereImg {
+    padding-left: 263px;
+  }
+  .HdboyImage {
+    padding-right: 228px;
+  }
+}
+.video-container .banner-video-text {
+  position: absolute;
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -200%);
+}
+.ImmersiveText{
+  margin-left: 150px;
+}
+@media (max-width: 1600px) {
+  .AnywhereSection {
+    .AnywhereImg {
+      padding-left: 220px;
+    }
+    .HdboyImage {
+      padding-right: 180px;
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .AnywhereSection {
+    .AnywhereImg {
+      padding-left: 160px;
+    }
+    .HdboyImage {
+      padding-right: 120px;
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .AnywhereSection {
+    padding: 40px 0;
+    .AnywhereImg {
+      padding-left: 120px;
+    }
+    .HdboyImage {
+      padding-right: 80px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .AnywhereSection {
+    padding: 30px 0;
+    .AnywhereImg {
+      padding-left: 80px;
+    }
+    .HdboyImage {
+      padding-right: 40px;
+    }
+  }
+  .ImmersiveText{
+    margin-left: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .AnywhereSection {
+    padding: 20px 0;
+    .AnywhereImg {
+      padding-left: 40px;
+    }
+    .HdboyImage {
+      padding-right: 20px;
+    }
+  }
+  .ImmersiveText{
+    margin-left: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .AnywhereSection {
+    .AnywhereImg {
+      padding-left: 0;
+      padding-bottom: 20px;
+      max-width: 80%;
+    }
+    .HdboyImage {
+      padding-right: 0;
+    }
+  }
+  .ImmersiveText{
+    margin-left: 0;
+    margin: 0 auto;
+    max-width: 248px;
+  }
+}

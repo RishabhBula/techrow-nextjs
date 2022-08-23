@@ -1,0 +1,35 @@
+.ContentCreatorPage {
+    .FirstContainer {
+        background: linear-gradient(103.41deg, #3C42C8 9.11%, #8924CC 89.85%);
+        .Row {
+            flex-direction: row-reverse;
+            .LeftContainer {
+                padding-left: 50px;
+                & > div {
+                    max-width: 800px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .ContentCreatorPage {
+        .FirstContainer .Row {
+            .LeftContainer {
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .ContentCreatorPage {
+        .FirstContainer .Row {
+            .LeftContainer {
+                padding-left: 20px;
+                text-align: unset;
+            }
+        }
+    }
+}
